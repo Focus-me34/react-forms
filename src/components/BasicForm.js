@@ -57,13 +57,13 @@ const BasicForm = (props) => {
         <div className={firstNameClasses}>
           <label htmlFor='name'>First Name</label>
           <input type='text' id='name' onChange={firstNameInputChangeHandler} onBlur={firstNameInputBlurHandler} value={enteredFirstName} />
-          {firstNameHasError && <p className="error-text">Enter a valid name (More than 5 characters)</p>}
+          {firstNameHasError && <p className="error-text">Enter a name</p>}
         </div>
 
         <div className={lastNameClasses}>
           <label htmlFor='name'>Last Name</label>
           <input type='text' id='name' onChange={lastNameInputChangeHandler} onBlur={lastNameInputBlurHandler} value={enteredLastName} />
-          {lastNameHasError && <p className="error-text">Enter a valid last name (More than 2 characters)</p>}
+          {lastNameHasError && <p className="error-text">Enter a valid last name</p>}
         </div>
       </div>
 
